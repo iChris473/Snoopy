@@ -202,6 +202,23 @@ footer p {
     .links > a > img {
         height: 35px;
     }
+    .contract {
+        margin: 80px auto;
+    }
+    .contract > div {
+        gap: 10px;
+    }
+    .contract h1 {
+        top: 2%;
+        font-size: 1.7rem;
+    }
+    .contract p {
+        font-size: 1rem;
+    }
+    .copySVG {
+        height: 30px;
+        margin-bottom: 10px;
+    }    
 }
 
 

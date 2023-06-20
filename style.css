@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "JabHeavy";
+    src: url("./fonts/jabjai_heavy.TTF");
+}
+
+@font-face {
+    font-family: "JabLight";
+    src: url("./fonts/jabjai_light.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+}
+
+section, div {
+    overflow: hidden;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.logoImg {
+    height: 150px;
+    object-fit: contain;
+}
+
+.main > div {
+    flex-direction: column;
+    text-align: center;
+}
+
+.main > div > h1 {
+    font-family: JabHeavy;
+    font-size: 6rem;
+}
+
+.main > div > p {
+    font-family: JabLight;
+    font-size: 2rem;
+}
+
+.gif {
+    height: 300px;
+    object-fit: contain;
+}
+
+.links {
+    gap: 20px;
+    margin: 35px auto;
+}
+
+.links > a > img {
+    height: 50px;
+}
+
+.features {
+    justify-content: space-around;
+    width: 95%;
+    margin: 100px auto;
+    max-width: 950px;
+}
+
+.features > div {
+    background: rgba(0, 0, 0, .1);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 5px;
+}
+
+.features > div > p {
+    font-size: 1.5rem;
+    font-family: JabHeavy;
+    color: black;
+    margin: 20px auto;
+}
+.features > div > p > span {
+    font-size: 2rem;
+}
+
+.secondFeature > p {
+    text-align: right;
+}
+
+.disclaimer {
+    flex-direction: column;
+    margin: 100px auto;
+}
+.disclaimer > h1 {
+    margin-bottom: 50px;
+    font-family: JabLight;
+    font-size: 3.5rem;
+}
+.disclaimer > svg {
+    cursor: pointer;
+}
+
+.disclaimer > p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(18, 18, 18, 0.782);
+    width: 95%;
+    margin: auto;
+    max-width: 800px;
+}
+
+footer {
+    background: rgba(0, 0, 0, .05);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .features > div {
+        width: 98%;
+        max-width: 400px;
+    }
+    section,
+    div,
+    footer {
+        overflow: hidden !important;
+    }
+    .gif {
+        width: 90%;
+        margin: auto;
+        max-width: 500px;
+        object-fit: contain;
+    }
+    .links > a > img {
+        height: 40px;
+    }
+}
+
+
+/* ANIMATIONS */
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

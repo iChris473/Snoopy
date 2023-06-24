@@ -245,7 +245,7 @@ footer p {
 
 .aboutSection {
     /* padding: 120px 15px; */
-    min-height: 110vh;
+    min-height: 130vh;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -294,17 +294,17 @@ footer p {
 .roadmap {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding-bottom: 100px;
     background-color: #91c214;
     text-align: center;
-    position: relative;
     min-height: 100vh;
 }
 
-.roadmap h1 {
-    font-family: JabHeavy;
-    font-size: 3rem;
+.roadmap > div {
+    width: 100%;
+    margin-top: 100px;
 }
 
 .maps-container {
@@ -318,7 +318,25 @@ footer p {
     max-width: 200px;
 
 }
+.earth {
+    top: 20px;
+}
+.earth img {
+    width: 400px;
+    height: 400px;
+  }
 
+  .bg img {
+    width: 110vw;
+    height: 100vh;
+  }
+
+  .text h1 {
+    font-family: JabHeavy !important;
+    font-size: 6vw;
+    color: #000;
+    letter-spacing: 10px;
+  }
 
 
 @media (max-width: 700px) {

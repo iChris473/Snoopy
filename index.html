@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- HERO SECTION AND NAV SECTION -->
@@ -34,7 +32,7 @@
             </nav>
             <div class="hero-props">
                 <div>
-                    <img src="./images/animated-snoppy.gif" class="gif">
+                    <img src="./images/Home.png" class="gif">
                     <!-- LINKS -->
                     <div class="links center" style="display: none;">
                         <a href="#"><img src="./images/1.png"></a>
@@ -70,10 +68,44 @@
     </section>
 
     <!-- ROADMAP -->
-    <section class="roadmap">
-        <img src="./images/Roadmap.png" class="hero-bg" style="opacity: 1; z-index: 0;">
-        <h1 style="z-index: 9; margin-top: 200px;">$SNOOPY'S ROADMAP</h1>
-        <div style="display: none; z-index: 9;" class="maps-container center">
+    <!-- <section id="sectionone" class="screen">
+        <div id="scene">
+          <div data-depth="0.1" class="bg">
+            <img src="images/background.png" alt="" />
+          </div>
+          <div data-depth="0.2" class="rock1">
+            <img src="images/rock.png" alt="" />
+          </div>
+          <div data-depth="1.2" class="earth">
+            <img src="images/earth.png" alt="" />
+          </div>
+          <div data-depth="0.1" class="text">
+            <h1>PLANETS</h1>
+          </div>
+          <div data-depth="0.4" class="mid">
+            <img src="images/mid.png" alt="" />
+          </div>
+          <div data-depth="0.1" class="fore">
+            <img src="images/foreground.png" alt="" />
+          </div>
+        </div>
+      </section> -->
+    <section id="sectionone" class="screen">
+        <div class="roadmap" id="scene" data-relative-input="true">
+            <div data-depth="0.2" class="bg center">
+                <img src="images/Roadmap.png" alt="" />
+            </div>
+            <div data-depth="0.5" class="earth center">
+                <img src="images/rd.png" alt="" />
+            </div>
+            <div data-depth="0.1" class="text center">
+                <h1>ROADMAP</h1>
+            </div>
+        </div>
+          
+        <!-- <img data-depth="0.1" src="./images/Roadmap.png" class="hero-bg" style="opacity: 1; z-index: 0;"> -->
+        <!-- <h1 style="z-index: 9; margin-top: 200px;">$SNOOPY'S ROADMAP</h1> -->
+        <!-- <div style="display: none; z-index: 9;" class="maps-container center">
             <div>
                 <p>Pre-Launch: Develop the concept, tokenomics, and smart contract. Build a strong community through social
                     media and branding.</p>
@@ -99,7 +131,7 @@
                 <p>Long-term Growth: Seek partnerships, implement governance, and focus on marketing, updates, and
                     additional utility exploration.</p>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- CONTRACT ADDRESS -->
@@ -127,38 +159,9 @@
         <p>team@xxsnoopy.xyz</p>
     </footer>
 
-    <script>
-
-        const contextText = document.querySelector('.contextText');
-
-        document.querySelector('.disclaimerSVG').addEventListener('click', () => {
-            if (contextText.style.display === 'none') {
-                contextText.style.display = ''; // Set the default value
-                contextText.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                contextText.style.display = 'none'; // Set the 'none' value
-            }
-        });
-
-        const copyBtn = document.querySelector('.copySVG');
-        // copyBtn.addEventListener('click', copyToClipboard);
-
-        function copyToClipboard() {
-            const textToCopy = document.querySelector('.contractAdd')
-            navigator.clipboard.writeText(textToCopy.innerText)
-                .then(() => {
-                    copyBtn.style.stroke = '#02a701';
-                    textToCopy.style.color = "green"
-                    setTimeout(() => {
-                        copyBtn.style.stroke = '';
-                        textToCopy.style.color = ""
-                    }, 2000)
-                })
-                .catch((error) => {
-                    window.alert('Unable to copy text to clipboard');
-                });
-        };
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

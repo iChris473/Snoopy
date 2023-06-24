@@ -75,7 +75,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .95;
+    /* opacity: .95; */
     z-index: -980;
 }
 
@@ -164,8 +164,8 @@ nav {
 .disclaimer {
     flex-direction: column;
     background: #78ab14;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 .disclaimer > h1 {
     margin-bottom: 50px;
@@ -244,16 +244,19 @@ footer p {
 }
 
 .aboutSection {
-    padding: 120px 15px;
+    /* padding: 120px 15px; */
+    min-height: 110vh;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    position: relative;
 }
 
 .abtImg > img {
     height: 100%;
     width: 98%;
     object-fit: contain;
+    margin-top: 100px;
 }
 
 .aboutSection > div {
@@ -288,6 +291,33 @@ footer p {
     position: absolute;
 }
 
+.roadmap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    background-color: #91c214;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.roadmap h1 {
+    font-family: JabHeavy;
+    font-size: 3rem;
+}
+
+.maps-container {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.maps-container > div{
+    border: 3px solid black;
+    width: 90%;
+    max-width: 200px;
+
+}
 
 
 

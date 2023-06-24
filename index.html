@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
     <!-- HERO SECTION AND NAV SECTION -->
@@ -43,7 +46,7 @@
                         <a href="#"><img src="./images/2.webp"></a>
                     </div>
                 </div>
-                <div class="center">
+                <div class="center" style="text-align: right;">
                     <h1>Snoopy</h1>
                     <p>Surf the Waves of <br> Endless Possibilities</p>
                 </div>
@@ -53,6 +56,7 @@
   
     <!-- ABOUT -->
     <section class="aboutSection">
+        <img src="./images/About1.png" class="hero-bg" style="opacity: 1; z-index: 0;">
         <div>
             <img src="./images/About.png" alt="about" class="aboutBg">
             <div class="center">
@@ -61,7 +65,40 @@
             </div>
         </div>
         <div class="abtImg center">
-            <img src="./images/About S.png" alt="about">
+            <!-- <img src="./images/About S.png" alt="about"> -->
+        </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="roadmap">
+        <img src="./images/Roadmap.png" class="hero-bg" style="opacity: 1; z-index: 0;">
+        <h1 style="z-index: 9; margin-top: 200px;">$SNOOPY'S ROADMAP</h1>
+        <div style="display: none; z-index: 9;" class="maps-container center">
+            <div>
+                <p>Pre-Launch: Develop the concept, tokenomics, and smart contract. Build a strong community through social
+                    media and branding.</p>
+            </div>
+            <div>
+                <p>Token Launch: Conduct presale, list on DEXs, and market the token through influencers and social media.
+                </p>
+            </div>
+            <div>
+                <p>CEX Listing: Pursue listings on centralized exchanges (CEXs) to increase accessibility and trading volume
+                    for Snoopy. Meet the listing requirements and engage in negotiations with potential exchange partners.
+                </p>
+            </div>
+            <div>
+                <p>Utility Development: Research and develop undisclosed utilities aligned with Snoopy Meme Token.
+                    Collaborate with partners and test the utilities.</p>
+            </div>
+            <div>
+                <p>Utility Launch: Announce the upcoming utilities, generate anticipation, and release them to the
+                    community.</p>
+            </div>
+            <div>
+                <p>Long-term Growth: Seek partnerships, implement governance, and focus on marketing, updates, and
+                    additional utility exploration.</p>
+            </div>
         </div>
     </section>
 
@@ -91,7 +128,9 @@
     </footer>
 
     <script>
+
         const contextText = document.querySelector('.contextText');
+
         document.querySelector('.disclaimerSVG').addEventListener('click', () => {
             if (contextText.style.display === 'none') {
                 contextText.style.display = ''; // Set the default value
@@ -99,9 +138,10 @@
             } else {
                 contextText.style.display = 'none'; // Set the 'none' value
             }
-        })
+        });
+
         const copyBtn = document.querySelector('.copySVG');
-        copyBtn.addEventListener('click', copyToClipboard);
+        // copyBtn.addEventListener('click', copyToClipboard);
 
         function copyToClipboard() {
             const textToCopy = document.querySelector('.contractAdd')
@@ -118,6 +158,7 @@
                     window.alert('Unable to copy text to clipboard');
                 });
         };
+
     </script>
 </body>
 </html>

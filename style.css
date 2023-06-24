@@ -26,6 +26,12 @@ section, div {
     overflow: hidden;
 }
 
+.z-axis {
+    display: block;
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+}
+
 .line-breaker {
     width: 98%;
     max-width: 900px;
@@ -51,7 +57,7 @@ main {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -69,13 +75,37 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
+.btn {
+    color: inherit;
+    cursor: pointer;
+    font-family: JabHeavy;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    transform: scale(.8);
+}
+.btn:before {
+    border: 2px solid black;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: perspective(48px) rotateY(3deg) rotateX(6deg) rotate(6deg) translateX(6px) scale(1.05);
+    transform: perspective(48px) rotateY(3deg) rotateX(6deg) rotate(6deg) translateX(6px) scale(1.05);
+    width: 100%;
+}
 
 .hero-bg {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* opacity: .95; */
     z-index: -980;
 }
 
@@ -110,16 +140,25 @@ nav {
 
 .hero-props h1 {
     font-family: JabHeavy;
-    font-size: 7rem;
+    font-size: 9rem;
 }
 
 .hero-props p {
-    font-family: JabLight;
-    font-size: 3rem;
+    font-family: JabHeavy;
+    font-size: 3.75rem;
+    color: #ffff02;
 }
 
+.hero-texts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+    text-align: right;
+  }
+
 .gif {
-    height: 400px;
+    height: 500px;
     object-fit: contain;
 }
 
@@ -244,8 +283,6 @@ footer p {
 }
 
 .aboutSection {
-    /* padding: 120px 15px; */
-    min-height: 130vh;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -267,6 +304,15 @@ footer p {
     position: relative;
 }
 
+.hero-bgs {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(./images/Abour.png) no-repeat;
+    background-size: 100vw 100%;
+    background-position: center;
+}
+
 .aboutSection > div > div {
     flex-direction: column;
     position: absolute;
@@ -280,8 +326,9 @@ footer p {
     font-size: 3rem;
 }
 .aboutSection > div > div > p {
-    font-family: JabLight;
+    font-family: JabHeavy;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .aboutBg {
@@ -324,9 +371,12 @@ footer p {
     height: 400px;
   }
 
-  .bg img {
-    width: 110vw;
+  .bg {
     height: 100vh;
+    width: 110vw;
+    background: url(./images/BAC\ 2.jpg) no-repeat;
+    background-size: 110vw 100%;
+    background-position: cover;
   }
 
   .text h1 {
@@ -335,7 +385,6 @@ footer p {
     color: #000;
     letter-spacing: 10px;
   }
-
 
 @media (max-width: 700px) {
     .features {

@@ -299,10 +299,10 @@ footer p {
     padding-bottom: 100px;
     background-color: #91c214;
     text-align: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
-.roadmap > div {
+.text,  .earth {
     width: 100%;
     margin-top: 100px;
 }
@@ -318,9 +318,7 @@ footer p {
     max-width: 200px;
 
 }
-.earth {
-    top: 20px;
-}
+
 .earth img {
     width: 400px;
     height: 400px;

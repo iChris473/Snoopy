@@ -403,7 +403,7 @@ footer p {
 .text h1 {
     font-family: JabHeavy !important;
     font-size: 6vw;
-    color: #000;
+    color: #ffff02;
     letter-spacing: 10px;
 }
 
@@ -457,6 +457,7 @@ footer p {
 .tokenomics > h1 {
     font-family: JabHeavy;
     font-size: 7rem;
+    color: #ffff02;
 }
 
 .tokenomics > div > img {
@@ -528,6 +529,9 @@ footer p {
     object-fit: contain;
 }
 
+.mobile-navv {
+    display: none !important;
+}
 
 
 
@@ -642,9 +646,8 @@ footer p {
         text-align: center;
     }
 
-    .tokenomics>h1 {
-        font-family: JabHeavy;
-        font-size: 4.5rem;
+    .tokenomics > h1 {
+        font-size: 3.8rem;
     }
 
     .contractT p {
@@ -657,7 +660,7 @@ footer p {
         min-height: 50vh !important;
     }
     .text h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .tokenomics > h1 {
         font-size: 3.5rem;
@@ -679,6 +682,32 @@ footer p {
     .main {
         flex-direction: column-reverse;
         gap: 40px;
+    }
+    .mobile-navv {
+        display: flex !important;
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background: url('./images/navBG.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        z-index: 99999;
+        top: 0;
+        background-color: #000000d7;
+    }
+    .mobile-navv > div {
+        font-family: JabHeavy;
+        color: #000;
+
+    }
+    .mobile-navv > div > a {
+        font-family: JabHeavy;
+        color: #000;
+
     }
 }
 

@@ -169,12 +169,15 @@ nav {
     height: 500px;
     object-fit: contain;
 }
-
+.links {
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 30px auto;
+}
 .links > div {
     gap: 20px;
-    margin: 35px auto;
+    /* margin: 35px auto; */
     justify-content: flex-end;
-    width: 100%;
 }
 
 .links a > img {

@@ -170,14 +170,14 @@ nav {
     object-fit: contain;
 }
 
-.links {
+.links > div {
     gap: 20px;
     margin: 35px auto;
     justify-content: flex-end;
     width: 100%;
 }
 
-.links>a>img {
+.links a > img {
     height: 50px;
 }
 
@@ -214,8 +214,8 @@ nav {
 .disclaimer {
     flex-direction: column;
     background: #78ab14;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .disclaimer>h1 {
@@ -441,8 +441,7 @@ footer p {
 
 .tokenomics {
     flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .tokenomics > div {
@@ -555,7 +554,7 @@ footer p {
         object-fit: contain;
     }
 
-    .links>a>img {
+    .links a >img {
         height: 35px;
     }
 
@@ -594,7 +593,21 @@ footer p {
     }
 
     .links {
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .links div {
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
         justify-content: center;
+    }
+    .links > div > a > img {
+        height: 35px;
+    }
+    .linksDiv2 {
+        gap: 43px !important;
     }
 
     .nav-links {
@@ -607,11 +620,11 @@ footer p {
     }
 
     .hero-texts h1 {
-        font-size: 6.5rem;
+        font-size: 6.1rem;
     }
 
     .hero-texts p {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
 
     .abtImg {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -28,8 +28,12 @@
                     <a href="#about">ABOUT</a>
                     <a href="#tokenomics">TOKENOMICS</a>
                     <a href="#roadmap">ROADMAP</a>
+                    <a href="#roadmap">WHITEPAPER</a>
                 </div>
-                <a href="#" class="btn"> <span class="z-axis">Buy $Snoopy</span> </a>
+                <div class="center">
+                    <a href="#" class="btn"> <span class="z-axis">Buy $S</span> </a>
+                    <img src="./images/alt.svg" class="menu">
+                </div>
             </nav>
             <div class="hero-props">
                 <div>
@@ -40,12 +44,13 @@
                     <p>Experience the magic</p>
                     <p>of Snoopy's world</p>
                     <!-- LINKS -->
-                    <div class="links center" style="justify-content: flex-end; width: 100%;">
+                    <div class="links center">
+                        <a href="#"><img src="./images/Pinksale.png "></a>
                         <a href="#"><img src="./images/3.webp"></a>
                         <a href="#"><img src="./images/4.png"></a>
                         <a href="#"><img src="./images/7.svg"></a>
-                        <a href="#"><img src="./images/5.png"></a>
-                        <a href="#"><img src="./images/6.png"></a>
+                        <a href="https://twitter.com/SnoopyTokenS" target="_blank"><img src="./images/5.png"></a>
+                        <a href="https://t.me/SnoopyTokenS" target="_blank"><img src="./images/6.png"></a>
                         <a href="#"><img src="./images/2.webp"></a>
                     </div>
                 </div>
@@ -56,7 +61,8 @@
     <!-- ABOUT -->
     <section class="aboutSection">
         <article class="hero-bgs"></article>
-        <div>
+        <div class="center" style="flex-direction: column;">
+            <h1 class="abtH1">ABOUT</h1>
             <img src="./images/About.png" alt="about" class="aboutBg" data-aos="fade-up-right" data-aos-duration="3000">
             <div class="center" style="display: none;">
                 <!-- <h1>ABOUT</h1> -->
@@ -153,14 +159,26 @@
     <!-- TOKENOMICS -->
     <section class="tokenomics center">
         <h1>TOKENOMICS</h1>
-        <img src="./images/Tokenomics.png" data-aos="fade-up-right" data-aos-duration="3000">
+        <div>
+            <img src="./images/Tokenomics.png" data-aos="fade-up-right" data-aos-duration="3000">
+            <div class="tknCont" data-aos="zoom-in-left" data-aos-duration="3000">
+                <h2>Pool Type: Fairlaunch</h2>
+                <p>Total Supply: 1,000,000,000 $S</p>
+                <p>Buy/Sell Tax: 0%</p>
+                <p>Presale: 54% </p>
+                <p>Liquidity: 36%</p>
+                <p>Utility: 5%</p>
+                <p>CEX: 5%</p>
+            </div>
+        </div>
+            
     </section>
 
     <!-- CONTRACT ADDRESS -->
-    <section class="contractT">
+    <section class="contractT center">
         <h1>Buy/Sell Tax = 0%</h1>
-        <div data-aos="fade-right" data-aos-duration="3000">
-            <p class="contractAdd">Contract: 0x3d41D6B6A90055C5BcF547974852524741361887</p>
+        <div data-aos="fade-right" data-aos-duration="3000" class="center">
+            <p class="contractAdd">Contract: 0x490.....................456UF</p>
             <img src="./images/copy.svg" alt="" class="copyBTN">
         </div>
     </section>
@@ -180,7 +198,9 @@
     <!-- FOOTER -->
     <footer>
         <p>© 2023 by $Snoopy. All rights reserved!</p>
-        <p>team@xxsnoopy.xyz</p>
+        <p>info@snoopytoken.xyz</p>
+        <p class="kyc">KYC and Audited by: </p>
+        <img src="./images/Solid Proof.png" class="solid-proof-img" alt="solid-proof">
     </footer>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->

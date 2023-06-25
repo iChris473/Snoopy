@@ -52,7 +52,7 @@ main {
     position: relative;
 }
 
-.main>div {
+.main > div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,13 +302,13 @@ footer p {
     position: relative;
 }
 
-.abtImg>img {
+.abtImg > img {
     height: 400px;
     object-fit: contain;
     margin-bottom: 150px;
 }
 
-.aboutSection>div {
+.aboutSection > div {
     flex: 1;
     min-height: 100vh;
     margin: auto;
@@ -521,7 +521,16 @@ footer p {
     font-size: 1.5rem;
     margin-top: 50px;
 }
+.disclaimerSVG {
+    width: 80px;
+    object-fit: contain;
+}
 
+
+
+
+
+/* MEDIA QUERIES FOR MOBILE ONLY */
 @media (max-width: 700px) {
     .features {
         flex-direction: column;
@@ -571,18 +580,9 @@ footer p {
         height: 30px;
         margin-bottom: 10px;
     }
-
-    .main {
-        flex-direction: column-reverse;
-        gap: 40px;
-    }
-
-    .aboutSection {
-        margin-top: 150px;
-    }
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR TAB AND MOBILE */
 @media (max-width: 1170px) {
     .hero-props {
         flex-direction: column;
@@ -659,6 +659,10 @@ footer p {
     }
     .solid-proof-img {
         height: 70px;
+    }
+    .main {
+        flex-direction: column-reverse;
+        gap: 40px;
     }
 }
 

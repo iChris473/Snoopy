@@ -611,10 +611,7 @@ footer p {
         justify-content: center;
     }
     .links > div > a > img {
-        height: 35px;
-    }
-    .linksDiv2 {
-        gap: 43px !important;
+        height: 50px;
     }
 
     .nav-links {
@@ -684,25 +681,22 @@ footer p {
         gap: 40px;
     }
     .mobile-navv {
-        display: flex !important;
-        /* align-items: center; */
-        /* justify-content: center; */
-        flex-direction: column;
-        gap: 20px;
         width: 100%;
-        background: url('./images/navBG.png');
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: contain;
         position: absolute;
         z-index: 99999;
         top: 0;
         background-color: #000000d7;
     }
     .mobile-navv > div {
-        font-family: JabHeavy;
-        color: #000;
-
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        background: url('./images/navBG.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     .mobile-navv > div > a {
         font-family: JabHeavy;

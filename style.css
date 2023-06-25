@@ -477,7 +477,7 @@ footer p {
 }
 
 .tknCont p {
-    font-family: JabLight;
+    font-family: JabHeavy;
     color: black;
     font-size: 20px;
     margin: 10px;
@@ -515,7 +515,7 @@ footer p {
     object-fit: contain;
 }
 .kyc {
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-family: JabHeavy;
     font-size: 1.5rem;
@@ -620,7 +620,7 @@ footer p {
 
     .abtH1 {
         font-family: JabHeavy;
-        color: white;
+        color: black;
         font-size: 5rem;
         display: block;
         text-align: center;

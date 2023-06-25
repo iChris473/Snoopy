@@ -32,3 +32,16 @@ function copyToClipboard() {
 // LANDING PAGE ANIMATION
 var scene = document.getElementById("scene");
 var parallaxInstance = new Parallax(scene);
+
+const xSVG = document.querySelector('.xSVG');
+const altSVG = document.querySelector('.altSVG');
+const mobile_navv = document.querySelector('.mobile-navv');
+
+altSVG.addEventListener('click', () => {
+  console.log('loggin')
+  console.log(mobile_navv);
+  mobile_navv.style.display = 'flex';
+})
+xSVG.addEventListener('click', () => {
+  mobile_navv.style.display = 'none'
+})

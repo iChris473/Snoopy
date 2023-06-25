@@ -644,7 +644,7 @@ footer p {
     }
 
     .tokenomics > h1 {
-        font-size: 3.8rem;
+        font-size: 3.5rem;
     }
 
     .contractT p {
@@ -681,27 +681,41 @@ footer p {
         gap: 40px;
     }
     .mobile-navv {
-        width: 100%;
-        position: absolute;
-        z-index: 99999;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 999;
         top: 0;
-        background-color: #000000d7;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #000000cd;
     }
     .mobile-navv > div {
+        padding-top: 100px;
+        padding-left: 10%;
         display: flex !important;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         gap: 20px;
         background: url('./images/navBG.png');
         background-position: top;
         background-repeat: no-repeat;
         background-size: contain;
+        z-index: 999;
+        width: 100%;
     }
     .mobile-navv > div > a {
         font-family: JabHeavy;
         color: #000;
-
+    }
+    .xSVG {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 50px;
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
     <!-- HERO SECTION AND NAV SECTION -->
     <main class="main">
@@ -30,9 +34,13 @@
             <div class="hero-props">
                 <div>
                     <img src="./images/Home.png" class="gif">
+                </div>
+                <div class="hero-texts">
+                    <h1>Snoopy</h1>
+                    <p>Experience the magic</p>
+                    <p>of Snoopy's world</p>
                     <!-- LINKS -->
-                    <div class="links center">
-                        <a href="#"><img src="./images/1.png"></a>
+                    <div class="links center" style="justify-content: flex-end; width: 100%;">
                         <a href="#"><img src="./images/3.webp"></a>
                         <a href="#"><img src="./images/4.png"></a>
                         <a href="#"><img src="./images/7.svg"></a>
@@ -41,115 +49,132 @@
                         <a href="#"><img src="./images/2.webp"></a>
                     </div>
                 </div>
-                <div class="hero-texts">
-                    <h1>Snoopy</h1>
-                    <p>Experience the magic</p>
-                    <p>of Snoopy's world</p>
-                </div>
             </div>
         </div>
     </main>
-  
+
     <!-- ABOUT -->
     <section class="aboutSection">
-        <!-- <img src="./images/Abour.png" class="hero-bg" style="opacity: 1; z-index: 0;"> -->
         <article class="hero-bgs"></article>
         <div>
-            <img src="./images/About.png" alt="about" class="aboutBg">
-            <div class="center">
+            <img src="./images/About.png" alt="about" class="aboutBg" data-aos="fade-up-right" data-aos-duration="3000">
+            <div class="center" style="display: none;">
                 <!-- <h1>ABOUT</h1> -->
-                <p>Surf the waves of endless possibilities with Snoopy! While we can't spill all the secrets just yet, rest assured that mind-blowing utilities and surprises are on the horizon. Get in on the action now and be part of the community that's about to unlock a world of thrilling possibilities. The Snoopy adventure is about to take off!"</p>
+                <p>Surf the waves of endless possibilities with Snoopy! While we can't spill all the secrets just yet,
+                    rest assured that mind-blowing utilities and surprises are on the horizon. Get in on the action now
+                    and be part of the community that's about to unlock a world of thrilling possibilities. The Snoopy
+                    adventure is about to take off!"</p>
             </div>
         </div>
         <div class="abtImg center">
-            <!-- <img src="./images/About S.png" alt="about"> -->
+            <img src="./images/3.png" alt="about" data-aos="fade-up-left" data-aos-duration="3000">
         </div>
     </section>
 
     <!-- ROADMAP -->
-    <!-- <section id="sectionone" class="screen">
-        <div id="scene">
-          <div data-depth="0.1" class="bg">
-            <img src="images/background.png" alt="" />
-          </div>
-          <div data-depth="0.2" class="rock1">
-            <img src="images/rock.png" alt="" />
-          </div>
-          <div data-depth="1.2" class="earth">
-            <img src="images/earth.png" alt="" />
-          </div>
-          <div data-depth="0.1" class="text">
-            <h1>PLANETS</h1>
-          </div>
-          <div data-depth="0.4" class="mid">
-            <img src="images/mid.png" alt="" />
-          </div>
-          <div data-depth="0.1" class="fore">
-            <img src="images/foreground.png" alt="" />
-          </div>
-        </div>
-      </section> -->
-    <section id="sectionone" class="screen">
+    <section id="sectionone" class="screen sectionone">
+        <img src="./images/Roadmap.png" alt="" class="roadBg" />
         <div class="roadmap" id="scene" data-relative-input="true">
-            <div data-depth="0.2" class="bg center">
-                <!-- <img src="./images/Roadmap.png" alt="" /> -->
-            </div>
             <div data-depth="0.5" class="earth center">
-                <img src="./images/RD.png" alt="" />
+                <img src="./images/RD.png" alt="" data-aos="zoom-in-right" data-aos-duration="3000" />
             </div>
             <div data-depth="0.1" class="text center">
                 <h1>ROADMAP</h1>
             </div>
         </div>
-          
-        <!-- <img data-depth="0.1" src="./images/Roadmap.png" class="hero-bg" style="opacity: 1; z-index: 0;"> -->
-        <!-- <h1 style="z-index: 9; margin-top: 200px;">$SNOOPY'S ROADMAP</h1> -->
-        <!-- <div style="display: none; z-index: 9;" class="maps-container center">
-            <div>
-                <p>Pre-Launch: Develop the concept, tokenomics, and smart contract. Build a strong community through social
-                    media and branding.</p>
-            </div>
-            <div>
-                <p>Token Launch: Conduct presale, list on DEXs, and market the token through influencers and social media.
+    </section>
+    
+    <!-- ROADMAP SWIPES -->
+    <section class="wrapper">
+      <div class="container scrollx">
+        <section class="sec1 pin">
+            <div class="anim" data-aos="fade-up" data-aos-duration="3000">
+                <h1>1. Pre-Launch</h1>
+                <p>
+                    Develop the concept, tokenomics,
+                    and smart contract. Build a strong community
+                    through social media and branding.
                 </p>
             </div>
-            <div>
-                <p>CEX Listing: Pursue listings on centralized exchanges (CEXs) to increase accessibility and trading volume
-                    for Snoopy. Meet the listing requirements and engage in negotiations with potential exchange partners.
+        </section>
+        <section class="sec2 pin">
+            <div class="anim" data-aos="fade-up" data-aos-duration="3000">
+                <h1>2. Token Launch</h1>
+                <p>
+                    Conduct presale, list on DEXs,
+                    and market the token through
+                    influencers and social media.
                 </p>
             </div>
-            <div>
-                <p>Utility Development: Research and develop undisclosed utilities aligned with Snoopy Meme Token.
-                    Collaborate with partners and test the utilities.</p>
+        </section>
+        <section class="sec3 pin">
+            <div class="anim" data-aos="fade-up" data-aos-duration="3000">
+                <h1>3. CEX Listing</h1>
+                <p>
+                    Pursue listings on centralized exchanges (CEXs)
+                    to increase accessibility and trading volume for Snoopy.
+                    Meet the listing requirements and engage in negotiations
+                    with potential exchange partners.
+                </p>
             </div>
-            <div>
-                <p>Utility Launch: Announce the upcoming utilities, generate anticipation, and release them to the
-                    community.</p>
+        </section>
+        <section class="sec4 pin">
+            <div class="anim" data-aos="fade-up" data-aos-duration="3000">
+                <h1>4. Utility Development</h1>
+                <p>Research and develop undisclosed utilities 
+                    aligned with Snoopy Meme Token.
+                    simply dummy text of the
+                    Collaborate with partners and test the utilities</p>
             </div>
-            <div>
-                <p>Long-term Growth: Seek partnerships, implement governance, and focus on marketing, updates, and
-                    additional utility exploration.</p>
+        </section>
+        <section class="sec5 pin">
+            <div class="anim" data-aos="fade-up" data-aos-duration="3000">
+                <h1>5. Utility Launch</h1>
+                <p>
+                    Research and develop undisclosed
+                    utilities aligned with Snoopy Meme Token.
+                    Collaborate with partners and test the utilities.
+                </p>
             </div>
-        </div> -->
+        </section>
+        <section class="sec6 pin">
+            <div class="anim" data-aos="fade-up" data-aos-duration="3000">
+                <h1>6. Long-term Growth</h1>
+                <p>
+                    Seek partnerships, implement governance,
+                    and focus on marketing, updates,
+                    and additional utility exploration.
+                </p>
+            </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section class="tokenomics center">
+        <h1>TOKENOMICS</h1>
+        <img src="./images/Tokenomics.png" data-aos="fade-up-right" data-aos-duration="3000">
     </section>
 
     <!-- CONTRACT ADDRESS -->
-    <section style="display: none;">
-        <div class="contracts center">
-            <div>
-                <img src="./images/halloween-wood-empty-signal.png" alt="about" class="aboutBg">
-                <div class="center">
-                    <h1>Buy/Sell Tax = 0%</h1>
-                    <p class="contractAdd">Contract: 0x7a....e9fC</p>
-                </div>
-            </div>
+    <section class="contractT">
+        <h1>Buy/Sell Tax = 0%</h1>
+        <div data-aos="fade-right" data-aos-duration="3000">
+            <p class="contractAdd">Contract: 0x3d41D6B6A90055C5BcF547974852524741361887</p>
+            <img src="./images/copy.svg" alt="" class="copyBTN">
         </div>
     </section>
+
     <!-- DISCLAIMER -->
     <section class="center disclaimer">
         <h1>Disclaimer</h1>
         <img src="./images/arrow.svg" class="animate-bounce disclaimerSVG">
-        <p class="contextText" style="display: none;">Snoopy Token is in no way affiliated, endorsed, or associated with the beloved character Snoopy or its creators. While our project draws inspiration from Snoopy's charm and cuteness, Snoopy Token operates independently as a community-driven cryptocurrency. Please note that any references to Snoopy are purely for artistic and entertainment purposes. We encourage all participants to conduct their own research and make informed decisions. Invest responsibly and join us on this exciting journey, separate from the Snoopy franchise.</p>
+        <p class="contextText" style="display: none;">Snoopy Token is in no way affiliated, endorsed, or associated with
+            the beloved character Snoopy or its creators. While our project draws inspiration from Snoopy's charm and
+            cuteness, Snoopy Token operates independently as a community-driven cryptocurrency. Please note that any
+            references to Snoopy are purely for artistic and entertainment purposes. We encourage all participants to
+            conduct their own research and make informed decisions. Invest responsibly and join us on this exciting
+            journey, separate from the Snoopy franchise.</p>
     </section>
 
     <!-- FOOTER -->
@@ -158,9 +183,11 @@
         <p>team@xxsnoopy.xyz</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="./app.js"></script>
 </body>
+
 </html>

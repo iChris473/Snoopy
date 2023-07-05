@@ -30,11 +30,12 @@ a {
 }
 
 body {
-    background: rgb(74, 195, 255);
-}
-section, footer {
     background-color: #83bc15;
+    /* background: rgb(74, 195, 255); */
 }
+/* section, footer {
+    background-color: #83bc15;
+} */
 
 section,
 div {
@@ -614,6 +615,10 @@ footer p {
     margin-bottom: 10px;
     font-size: 1.4rem;
     font-family: JabHeavy;
+}
+
+.disclaimModal {
+    display: none;
 }
 
 

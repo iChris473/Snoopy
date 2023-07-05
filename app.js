@@ -4,7 +4,7 @@ const contextText = document.querySelector('.contextText');
 const disclaimModal = document.querySelector('.disclaimModal');
 
 document.querySelector('.disclaimerSVG').addEventListener('click', () => {
-    disclaimModal.style.display = '';
+    disclaimModal.style.display = 'block';
     disclaimModal.classList.add('modal');
 });
 

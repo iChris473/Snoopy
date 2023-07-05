@@ -1,14 +1,16 @@
 AOS.init();
 
 const contextText = document.querySelector('.contextText');
+const disclaimModal = document.querySelector('.disclaimModal');
 
 document.querySelector('.disclaimerSVG').addEventListener('click', () => {
-  if (contextText.style.display === 'none') {
-    contextText.style.display = ''; // Set the default value
-    contextText.scrollIntoView({ behavior: 'smooth' });
-  } else {
-    contextText.style.display = 'none'; // Set the 'none' value
-  }
+    disclaimModal.style.display = '';
+    disclaimModal.classList.add('modal');
+});
+
+disclaimModal.addEventListener('click', () => {
+    disclaimModal.style.display = 'none';
+    disclaimModal.classList.remove('modal');
 });
 
 const copyBtn = document.querySelector('.copyBTN');
@@ -18,9 +20,9 @@ function copyToClipboard() {
   const textToCopy = document.querySelector('.contractAdd')
   navigator.clipboard.writeText(textToCopy.innerText)
     .then(() => {
-      textToCopy.style.fontFamily = "JabHeavy"
+      textToCopy.style.fontFamily = "FetHeavy"
       setTimeout(() => {
-        textToCopy.style.fontFamily = "JabLight"
+        textToCopy.style.fontFamily = "FetLight"
       }, 2000)
     })
     .catch((error) => {

@@ -20,9 +20,9 @@ function copyToClipboard() {
   const textToCopy = document.querySelector('.contractAdd')
   navigator.clipboard.writeText(textToCopy.innerText)
     .then(() => {
-      textToCopy.style.fontFamily = "FetHeavy"
+      textToCopy.style.fontFamily = "JabHeavy";
       setTimeout(() => {
-        textToCopy.style.fontFamily = "FetLight"
+        textToCopy.style.fontFamily = "Montserrat";
       }, 2000)
     })
     .catch((error) => {

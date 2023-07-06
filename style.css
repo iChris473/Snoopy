@@ -167,7 +167,7 @@ nav {
 .hero-props h1 {
     font-family: JabHeavy;
     font-size: 8rem;
-    color: white;
+    color: #000;
 }
 
 .hero-props p {
@@ -175,7 +175,7 @@ nav {
     line-height: 70px;
     font-size: 3.75rem;
     /* color: #ffff02; */
-    color: #000;
+    color: white;
 }
 
 .hero-texts {
@@ -244,7 +244,8 @@ nav {
 
 .disclaimer > h1 {
     margin-bottom: 20px;
-    font-family: FetHeavy;
+    /* font-family: FetHeavy; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.1rem;
     text-decoration: underline;
     cursor: pointer;
@@ -433,7 +434,8 @@ footer p {
 }
 
 .text h1 {
-    /* font-family: FetHeavy !important; */
+    font-family: FetHeavy !important;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;;
     font-size: 6vw;
     color: #ffff02;
@@ -454,13 +456,15 @@ footer p {
 }
 
 .container h1 {
-    font-family: FetHeavy;
+    /* font-family: FetHeavy; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     line-height: 40px;
 }
 
 .container p {
-    font-family: FetLight;
+    /* font-family: FetLight; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     line-height: 40px;
 }
@@ -490,7 +494,8 @@ footer p {
 }
 
 .tokenomics > h1 {
-    /* font-family: FetHeavy; */
+    font-family: FetHeavy;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-size: 7rem;
     color: #ffff02;
@@ -511,19 +516,22 @@ footer p {
 }
 
 .tknCont h2 {
-    font-family: FetHeavy;
+    /* font-family: FetHeavy; */
+    font-family: 'Montserrat', sans-serif;
     line-height: 35px;
     font-size: 35px;
     color: black;
 }
 
 .lightTax {
-    /* font-family: FetLight; */
+    font-family: FetLight;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 
 .tknCont p {
-    /* font-family: FetHeavy; */
+    font-family: FetHeavy;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     line-height: 35px;
     color: black;
@@ -537,13 +545,15 @@ footer p {
 }
 
 .contractT h1 {
-    /* font-family: FetHeavy; */
+    font-family: FetHeavy;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
 }
 
 .contractT p {
-    font-family: FetLight;
+    /* font-family: FetLight; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
 }
 
@@ -556,8 +566,12 @@ footer p {
 }
 
 .abtH1 {
-    display: none;
+    color: #ffff02;
+    font-size: 6.5rem;
+    display: block;
+    text-align: center;
 }
+
 
 .solid-proof-img {
     height: 100px;
@@ -619,7 +633,8 @@ footer p {
     left: 28%;
     font-size: .85rem;
     line-height: 28px;
-    font-family: FetLight;
+    /* font-family: FetLight; */
+    font-family: 'Montserrat', sans-serif;
     top: 15%;
 }
 .discLM {
@@ -654,9 +669,10 @@ footer p {
     }
 
     .gif {
-        width: 90%;
+        width: 80%;
         margin: auto;
         max-width: 500px;
+        max-height: 400px;
         object-fit: contain;
     }
 
@@ -707,11 +723,14 @@ footer p {
 @media (max-width: 1170px) {
     .hero-props {
         flex-direction: column;
+        justify-content: center;
+        gap: 20px;
     }
 
     .hero-texts {
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        flex: 1;
     }
 
     .links {
@@ -755,11 +774,11 @@ footer p {
     }
 
     .abtH1 {
-        font-family: JabHeavy;
-        color: black;
-        font-size: 5rem;
+        color: #ffff02;
+        font-size: 3.9rem;
         display: block;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .tokenomics > h1 {
@@ -829,7 +848,8 @@ footer p {
     }
     
     .mobile-navv > div > a {
-        font-family: FetLight;
+        /* font-family: FetLight; */
+        font-family: 'Montserrat', sans-serif;
         color: #000;
     }
     .xSVG {

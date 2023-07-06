@@ -240,6 +240,7 @@ nav {
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
+    background: #72a113;
 }
 
 .disclaimer > h1 {
@@ -670,8 +671,7 @@ footer p {
     .gif {
         width: 80%;
         margin: auto;
-        max-width: 500px;
-        max-height: 400px;
+        height: 350px;
         object-fit: contain;
     }
 

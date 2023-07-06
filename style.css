@@ -813,7 +813,10 @@ footer p {
     }
     .main {
         flex-direction: column-reverse;
-        gap: 40px;
+        gap: 40px;;
+    }
+    .main > div {
+        min-height: auto;
     }
     .mobile-navv {
         width: 100vw;

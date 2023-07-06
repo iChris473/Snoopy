@@ -37,13 +37,6 @@ body {
     background-color: #83bc15;
 } */
 
-.headerText {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 8rem;
-    margin: 20px auto;
-    color: #ffff02;
-}
-
 .description {
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
@@ -91,6 +84,12 @@ main {
     max-width: 1300px;
     margin: auto;
     margin-bottom: 100px;
+}
+
+.abtDesc{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    line-height: 40px;
 }
 
 .main > div {
@@ -239,7 +238,7 @@ nav {
     max-width: 950px;
 }
 
-.features>div {
+.features > div {
     background: rgba(0, 0, 0, .1);
     padding: 40px 20px;
     border-radius: 10px;
@@ -247,18 +246,18 @@ nav {
     margin: 5px;
 }
 
-.features>div>p {
+.features > div > p {
     font-size: 1.5rem;
     font-family: JabHeavy;
     color: black;
     margin: 20px auto;
 }
 
-.features>div>p>span {
+.features > div > p > span {
     font-size: 2rem;
 }
 
-.secondFeature>p {
+.secondFeature > p {
     text-align: right;
 }
 
@@ -274,7 +273,7 @@ nav {
     margin-bottom: 20px;
     /* font-family: FetHeavy; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -376,13 +375,9 @@ footer p {
 
 
 .roadmap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: #91c214;
-    text-align: center;
-    padding: 70px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
 }
 
 .maps-container {
@@ -453,16 +448,17 @@ footer p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid #ffff02;
-    height: 350px;
+    border: 5px solid #ffff02;
+    /* height: 350px; */
     width: 500px;
-    padding: 20px;
+    padding: 50px;
     margin: auto;
     text-align: center;
 }
 
 .pin h1 {
     color: #ffff02;
+    font-family: JabHeavy;
 }
 
 .tokenomics {
@@ -477,11 +473,11 @@ footer p {
     gap: 20px;
 }
 
-.tokenomics > h1 {
+.roadHeader, .aboutHeader {
     font-family: FetHeavy;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-size: 7rem;
+    font-size: 6rem;
     color: #ffff02;
     padding-top: 30px;
 }
@@ -630,6 +626,10 @@ footer p {
 .disclaimModal {
     display: none;
 }
+.roadHeader {
+    margin-bottom: 100px;
+    text-align: center;
+}
 
 
 
@@ -777,10 +777,6 @@ footer p {
         margin-bottom: 30px;
     }
 
-    .tokenomics > h1 {
-        font-size: 2.6rem;
-    }
-
     .contractT p {
         font-size: .7rem;
         line-height: 20px;
@@ -789,16 +785,17 @@ footer p {
         background-size: cover;
     }
 
-    .text h1 {
-        font-size: 2.6rem;
+    .roadHeader, .aboutHeader {
+        font-size: 3.2rem;
         letter-spacing: 6px;
     }
-    .roadmap {
-        padding: 0px;
+    .aboutHeader, .abtDesc, .roadHeader {
+        text-align: center;
     }
-
     .tokenomics > h1 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
+        margin-bottom: 0px !important;
+        margin-top: 50px;
     }
     .tokenomics > div {
         flex-direction: column;

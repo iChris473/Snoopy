@@ -37,6 +37,27 @@ body {
     background-color: #83bc15;
 } */
 
+.headerText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    margin: 20px auto;
+    color: #ffff02;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    max-width: 500px;
+    width: 95%;
+    font-weight: 500;
+    margin: auto;
+}
+
+.aboutImg {
+    height: 600px;
+    object-fit: contain;
+}
+
 section,
 div {
     overflow: hidden;
@@ -64,6 +85,12 @@ div {
 
 main {
     position: relative;
+}
+
+.aboutSection {
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 .main > div {
@@ -314,7 +341,7 @@ footer p {
     font-family: JabHeavy;
 }
 
-.contract>div {
+.contract > div {
     position: absolute;
     bottom: 20%;
     left: 7%;
@@ -326,26 +353,12 @@ footer p {
     cursor: pointer;
 }
 
-.aboutSection {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    position: relative;
-}
-
 .abtImg > img {
     height: 400px;
     object-fit: contain;
     margin-bottom: 150px;
 }
 
-.aboutSection > div {
-    flex: 1;
-    min-height: 100vh;
-    margin: auto;
-    max-width: 500px;
-    position: relative;
-}
 
 .hero-bgs {
     position: absolute;
@@ -356,50 +369,20 @@ footer p {
     background-position: center;
 }
 
-.aboutSection>div>div {
-    flex-direction: column;
-    position: absolute;
-    max-width: 300px;
-    top: 25%;
-    left: 25%;
-}
-
-.aboutSection>div>div>h1 {
-    font-family: JabHeavy;
-    font-size: 3rem;
-}
-
-.aboutSection>div>div>p {
-    font-family: JabHeavy;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 .aboutBg {
     height: 600px;
     object-fit: contain;
 }
 
-.sectionone {
-    min-height: 120vh !important;
-    position: relative
-}
 
 .roadmap {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 100px;
     background-color: #91c214;
     text-align: center;
-    min-height: 90vh;
-}
-
-.text,
-.earth {
-    width: 100%;
-    margin-top: 100px;
+    padding: 70px;
 }
 
 .maps-container {
@@ -428,18 +411,14 @@ footer p {
     z-index: 9;
 }
 
-.text {
-    height: 200px;
-    padding-top: 30px;
-}
-
 .text h1 {
     font-family: FetHeavy !important;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;;
     font-size: 6vw;
     color: #ffff02;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
+    padding-top: 50px;
 }
 
 .wrapper {
@@ -471,14 +450,19 @@ footer p {
 
 .pin > div {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid #ffff02;
+    height: 350px;
+    width: 500px;
     padding: 20px;
-    max-width: 400px;
-    width: 95%;
     margin: auto;
+    text-align: center;
+}
+
+.pin h1 {
+    color: #ffff02;
 }
 
 .tokenomics {
@@ -716,6 +700,12 @@ footer p {
         font-size: 1.4rem;
         padding-top: 10px;
     }    
+    .pin > div {
+        height: 350px;
+        max-width: 500px;
+        width: 90%;
+        padding: 10px;
+    }
 }
 
 /* MEDIA QUERIES FOR TAB AND MOBILE */
@@ -724,6 +714,13 @@ footer p {
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+    }
+    .aboutImg {
+        height: 600px;
+        object-fit: contain;
+    }
+    .headerText {
+        font-size: 5.7rem;
     }
 
     .hero-texts {
@@ -791,12 +788,15 @@ footer p {
     .hero-bgs {
         background-size: cover;
     }
-    .sectionone {
-        min-height: 50vh !important;
-    }
+
     .text h1 {
         font-size: 2.6rem;
+        letter-spacing: 6px;
     }
+    .roadmap {
+        padding: 0px;
+    }
+
     .tokenomics > h1 {
         font-size: 2.6rem;
     }
@@ -861,6 +861,20 @@ footer p {
     .totalLT {
         font-size: 18px !important;
     }
+    .aboutSection {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .aboutImg {
+        width: 90%;
+    }
+    .earth > img {
+        width: 90%;
+        object-fit: contain;
+    }
 }
 
 
@@ -883,3 +897,16 @@ footer p {
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }
+
+.wobble {
+    animation: wobble 2s ease infinite;
+  }
+  @keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  }

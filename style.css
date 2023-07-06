@@ -95,7 +95,7 @@ nav {
 .btn {
     color: inherit;
     cursor: pointer;
-    font-family: FetHeavy;
+    font-family: JabHeavy;
     font-size: 2rem;
     line-height: 1;
     padding: 20px;
@@ -146,7 +146,7 @@ nav {
 }
 
 .nav-links > a {
-    font-family: FetHeavy;
+    font-family: JabHeavy;
     font-size: 1.25rem;
 }
 
@@ -167,13 +167,15 @@ nav {
 .hero-props h1 {
     font-family: JabHeavy;
     font-size: 8rem;
+    color: white;
 }
 
 .hero-props p {
-    font-family: FetHeavy;
+    font-family: JabHeavy;
     line-height: 70px;
     font-size: 3.75rem;
-    color: #ffff02;
+    /* color: #ffff02; */
+    color: #000;
 }
 
 .hero-texts {
@@ -252,7 +254,11 @@ nav {
     cursor: pointer;
 }
 
-.disclaimer>p {
+.monts {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.disclaimer > p {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: rgba(18, 18, 18, 0.782);
@@ -427,7 +433,8 @@ footer p {
 }
 
 .text h1 {
-    font-family: FetHeavy !important;
+    /* font-family: FetHeavy !important; */
+    font-family: 'Montserrat', sans-serif;;
     font-size: 6vw;
     color: #ffff02;
     letter-spacing: 10px;
@@ -483,7 +490,8 @@ footer p {
 }
 
 .tokenomics > h1 {
-    font-family: FetHeavy;
+    /* font-family: FetHeavy; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 7rem;
     color: #ffff02;
     padding-top: 30px;
@@ -510,11 +518,13 @@ footer p {
 }
 
 .lightTax {
-    font-family: FetLight;
+    /* font-family: FetLight; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tknCont p {
-    font-family: FetHeavy;
+    /* font-family: FetHeavy; */
+    font-family: 'Montserrat', sans-serif;
     line-height: 35px;
     color: black;
     font-size: 20px;
@@ -527,7 +537,8 @@ footer p {
 }
 
 .contractT h1 {
-    font-family: FetHeavy;
+    /* font-family: FetHeavy; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
 }
 
@@ -728,7 +739,7 @@ footer p {
     }
 
     .hero-texts h1 {
-        font-size: 6.1rem;
+        font-size: 5.7rem;
     }
 
     .hero-texts p {

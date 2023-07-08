@@ -50,8 +50,7 @@ body {
     height: 600px;
     object-fit: contain;
 }
-
-section,
+top,
 div {
     overflow: hidden;
 }
@@ -716,10 +715,10 @@ footer p {
         gap: 20px;
     }
     .aboutImg {
-        height: 600px;
+        width: 95%;
         object-fit: contain;
     }
-    .headerText {
+    .headerTexttop
         font-size: 5.7rem;
     }
 
@@ -864,12 +863,16 @@ footer p {
     .aboutSection {
         flex-direction: column;
         margin: 10px;
+        margin-bottom: 50px;
     }
     .description {
         font-size: 18px;
     }
     .aboutImg {
-        width: 90%;
+        width: 98%;
+        object-fit: contain;
+        height: auto;
+        margin-top: 20px;
     }
     .earth > img {
         width: 90%;

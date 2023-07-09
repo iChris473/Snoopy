@@ -718,7 +718,7 @@ footer p {
         width: 95%;
         object-fit: contain;
     }
-    .headerTexttop
+    .top {
         font-size: 5.7rem;
     }
 
@@ -872,7 +872,7 @@ footer p {
         width: 98%;
         object-fit: contain;
         height: auto;
-        margin-top: 20px;
+        margin-top: 50px;
     }
     .earth > img {
         width: 90%;
